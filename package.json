@@ -1,0 +1,24 @@
+{
+  "name": "email-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthargett/node-email-service.git"
+  },
+  
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthargett/node-email-service/issues"
+  },
+  "homepage": "https://github.com/matthargett/node-email-service#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
