@@ -1,11 +1,16 @@
 const app = require('express')();
 
-let emails = 0;
+let totalEmails = 0;
 
-app.get('/stats', (request, response) => response.send('total emails sent: ' + emails));
+app.get('/stats', (request, response) => response.status(200).
+    json({'emailCount': totalEmails}));
+
 app.post('/email', (request, response) => {
     response.sendStatus(200);
-    emails++;
+    totalEmails++;
 });
+
 app.listen(process.env.PORT || 3000);
+
+module.exports = app;
 

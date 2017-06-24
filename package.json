@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "test": "eslint server/*.js"
+    "test": "jasmine && eslint server/*.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,12 @@
   "homepage": "https://github.com/matthargett/node-email-service#readme",
   "dependencies": {
     "eslint": "^4.1.0",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "jasmine": "^2.6.0",
+    "jasmine-async-suite": "^0.0.8",
+    "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-jasmine": "^2.6.2"
   }
 }
