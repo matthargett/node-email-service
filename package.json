@@ -18,13 +18,14 @@
   },
   "homepage": "https://github.com/matthargett/node-email-service#readme",
   "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
     "eslint": "^4.1.0",
-    "express": "^4.15.3",
+    "eslint-plugin-jasmine": "^2.6.2",
+    "frisby": "^2.0.0-alpha.3",
     "jasmine": "^2.6.0",
     "jasmine-async-suite": "^0.0.8",
     "supertest": "^3.0.0"
-  },
-  "devDependencies": {
-    "eslint-plugin-jasmine": "^2.6.2"
   }
 }
